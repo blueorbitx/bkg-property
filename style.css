@@ -399,3 +399,62 @@ footer{
     line-height:1.6;
     font-style:italic;
 }
+
+/* Mobile Navbar */
+
+.menu-toggle{
+    display:none;
+    font-size:28px;
+    cursor:pointer;
+    color:#0f172a;
+}
+
+@media(max-width:768px){
+
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:12px 20px;
+}
+
+.logo-icon img{
+    width:55px;
+    height:55px;
+}
+
+.menu-toggle{
+    display:block;
+}
+
+nav{
+    display:none;
+    position:absolute;
+    top:80px;
+    left:0;
+    width:100%;
+    background:#fff;
+    box-shadow:0 8px 20px rgba(0,0,0,.1);
+    flex-direction:column;
+    text-align:center;
+}
+
+nav.active{
+    display:flex;
+}
+
+nav a{
+    padding:15px;
+    margin:0;
+    border-bottom:1px solid #eee;
+}
+
+.hero h1{
+    font-size:38px;
+}
+
+.hero p{
+    font-size:18px;
+}
+
+}
